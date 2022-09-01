@@ -1,0 +1,742 @@
+@charset "utf-8";
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+span {
+    display: inline-block;
+}
+
+/* 헤더 */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 720px;
+    width: 100%;
+    height: 8rem;
+    padding: 0 2.5rem;
+    border: 1px solid #000;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+header .menu_btn {
+    padding: 2rem;
+    background-image: url('../images/icon_menu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+header > h1 {
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+header > h1 > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.util > ul {
+    display: flex;    
+}
+
+.util > ul > li:first-of-type > button,
+.util > ul > li:last-of-type > button {
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+.util > ul > li:first-of-type > button {
+    background-image: url('../images/icon_search.png');
+    margin-right: 2rem;
+}
+
+.util > ul > li:last-of-type > button  {
+    position: relative;
+    background-image: url('../images/icon_cart.png');
+}
+
+.util > ul > li:last-of-type > button::after {
+    content: '0';
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #ff4b4c;
+}
+
+/* section 메인 */
+
+.main {
+    position: relative;
+    width: 100%;
+    padding: 12rem 0 8%;
+    background-image: url('../images/main_section_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main_title {
+    padding-left: 2.5rem;
+    color: #fff;
+}
+
+.main_title > p {
+    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.main_title > h2  {
+    font-family: 'LG Smart Bold';
+    font-size: 4.5rem;
+    font-weight: 300;
+    letter-spacing: -3px;
+}
+
+/* 메인 슬라이드 영역 */
+
+.main_slide_frame {
+    margin: 1.5rem 0 2.5rem 2.5rem;
+    overflow: hidden;
+}
+
+.main_slide_frame > ul {
+    display: flex;
+}
+
+.main_slide_frame > ul > li > a {
+    display: block;
+}
+
+.main_slide_frame > ul > li:first-of-type {
+    position: relative;
+    margin-right: 8.5rem;
+}
+
+.main_slide_thumbnail01, .main_slide_thumbnail02 {
+    width: 33rem;
+    height: 36.4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.main_slide_thumbnail01 {
+    position: relative;
+    background-image: url('../images/main_slide_thum01.png');
+}
+
+.main_slide_thumbnail02 {
+    background-position: left;
+    background-image: url('../images/main_slide_thum02.png');
+}
+
+.main_cart {
+    position: absolute;
+    bottom: 12.5rem;
+    right: -3rem;
+    width: 10rem;
+    height: 10rem;
+    background-image: url('../images/main_cart.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 99;
+}
+
+.main_slide_list > a > h3 {
+    margin-bottom: 0.5rem;
+    font-family: 'LG Smart Bold';
+    font-size: 2.5rem;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.price > .discount > em,
+.price > .discount > .persent {
+    font-family: 'LG Smart Bold';
+    font-size: 4.7rem;
+    font-style: normal;
+    font-weight: 900;
+    color: #333;
+}
+
+.price > .discount > .persent {
+    font-size: 2.5rem;
+}
+
+.badge.yellow {
+    border: 2px solid #fffa77;
+    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+    color: #fffa77;
+}
+
+.price_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.price_right > del {
+    font-family: 'LG Smart';
+    font-size: 2rem;
+    color: #bbbbbb;
+}
+
+.modern_price {
+    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #222222;
+}
+
+.main_slide_scrollbar {
+    position: relative;
+    width: 85%;
+    height: 0.5em;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main_slide_scrollbar > .main_slide_scrollbar_drag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #fffa77;
+}
+
+.main_bottom_bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: 3rem; */
+    padding: 2.5%;
+    border-radius: 50px 50px 0 0;
+    background-color: #fff;
+}
+
+/* section 베스트 아이템 */
+
+.event {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 0 2rem;
+    background-color: #fff;
+}
+
+.event > img {
+    display: block;
+    width: 92%;
+    height: auto;
+}
+
+.best_item > h2 {
+    margin-top: 3rem;
+    padding-left: 2.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+/* 탭 메뉴 버튼 영역 */
+
+.tab_btn {
+    padding-left: 2.5rem;
+    overflow: hidden;
+}
+
+.tab_btn > ul {
+    display: flex;
+    align-items: center;
+}
+
+.tab_btn > ul > li {
+    margin: 4rem 5.3rem 4rem 0;
+}
+
+.tab_btn > ul > li > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab_btn > ul > li > a > div {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    background-color: #f2f3f6;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.tab_btn > ul > li > a > span {
+    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+    font-size: 2rem;
+}
+
+.tab_btn > ul > li > a > div.fruit {
+    background-image: url('../images/tab_btn01.png');
+}
+
+.tab_btn > ul > li > a > div.meat {
+    background-image: url('../images/tab_btn02.png');
+}
+
+.tab_btn > ul > li > a > div.vegetable {
+    background-image: url('../images/tab_btn03.png');
+}
+
+.tab_btn > ul > li > a > div.fish {
+    background-image: url('../images/tab_btn04.png');
+}
+
+.tab_btn > ul > li > a > div.food {
+    background-image: url('../images/tab_btn05.png');
+}
+
+/* 탭버튼 active */
+
+.tab_btn > ul > li.active > a > div {
+    background-color: #fff;
+}
+
+.tab_btn > ul > li.active > a > span {
+    color: #ff4b4c;
+    font-weight: bold;
+}
+
+/* 탭메뉴 내용 영역 */
+
+.tab_cont_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.7rem 0 2.5rem;
+    font-family: 'AppleSDGothicNeo', sans-serif;
+}
+
+.tab_cont_title > h2 {
+    font-size: 3rem;
+}
+
+.tab_cont_title > .all_view {
+    display: flex;
+    align-items: center;
+}
+
+.tab_cont_title > .all_view > span {
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: #666666;
+}
+
+.tab_cont_title > .all_view > button {
+    display: block;
+    padding: 1.5rem;
+    background-image: url('../images/plus.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.tab_main_cont {
+    padding: 0 2.7rem 0 2.5rem;
+}
+
+.tab_main_cont > .main_cont_bg {
+    padding: 50% 0;
+    margin: 3% 0;
+    background-image: url('../images/tab_cont_main.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.tab_main_cont > h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.tab_main_cont > h3 {
+    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+    font-size: 2.6rem;
+    margin: 1rem 0;
+}
+
+.tab_main_cont_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.tab_main_cont_discount {
+    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+    color: #ff4b4c;
+    font-weight: 900;
+}
+
+.tab_main_cont_discount > strong {
+    font-size: 4rem;
+}
+
+.tab_main_cont_discount > .persent {
+    font-size: 3rem;
+}
+
+.tab_main_cont_revise > del {
+    margin-right: 2rem;
+    font-size: 2.6rem;
+    color: #bbbbbb;
+}
+
+.tab_main_cont_revise > em {
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.badge_area > span {
+    margin-right: 1rem;
+}
+
+/* 탭 메뉴 안 슬라이드 영역 */
+
+.tab_cont_slide_frame {
+    margin: 6rem 0 3rem;
+    padding-left: 2.5rem;
+    overflow: hidden;
+}
+
+.tab_cont_slide_frame > ul {
+    display: flex;
+    align-items: flex-start;
+}
+
+.tab_cont_slide_frame > ul > li {
+    margin-right: 3rem;
+}
+
+.tab_cont_slide_frame > ul > li > a {
+    display: block;
+}
+
+.tab_cont_slide_frame > ul > li > a > .tab_cont_slide_thumb {
+    width: 27rem;
+    height: 27rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.tab_cont_slide_frame > ul > li > a > .tab_cont_slide_thumb.avocado {
+    background-image: url('../images/tab_cont_slide_img01.png');
+}
+
+.tab_cont_slide_frame > ul > li > a > .tab_cont_slide_thumb.pomegranate {
+    background-image: url('../images/tab_cont_slide_img02.png');
+}
+
+.tab_cont_slide_frame > ul > li > a > .tab_cont_slide_thumb.grape {
+    background-image: url('../images/tab_cont_slide_img03.png');
+}
+
+.tab_cont_slide_frame > ul > li > a > h2 {
+    margin-top: 2rem;
+    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.tab_cont_slide_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif
+}
+
+.tab_cont_slide_discount {
+    color: #ff4b4c;
+    font-weight: 900;
+}
+
+.tab_cont_slide_discount > em {
+    display: inline-block;
+    line-height: 5.7rem;
+    font-size: 4rem;
+    font-style: normal;
+}
+
+.tab_cont_slide_discount > .persent {
+    font-size: 2.5rem;
+}
+
+.tab_cont_slide_revise {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.tab_cont_slide_revise > del {
+    font-size: 1.8rem;
+    color: #bbbbbb;
+}
+
+.tab_cont_slide_revise > p {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.tab_cont_slide_scrollbar {
+    position: relative;
+    width: 85%;
+    height: 0.5rem;
+    margin: 0 auto;
+    background-color: #e8e8ec;
+}
+
+.tab_cont_slide_scrollbar .tab_cont_slide_scrollbar_drag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background-color: #ff4b4c;
+}
+
+.tab_cont_slide_badge_area {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab_cont_slide_badge_area > span {
+    min-width: 11.3rem;
+    max-height: 3.7rem;
+}
+
+.tab_cont_slide_badge_area > span:first-of-type {
+    margin-bottom: 1rem;
+}
+
+
+/* 푸터 */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    background-color: #e8e8ec;
+    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+}
+
+.footer_link_area {
+    margin: 5rem auto 2rem;
+}
+
+.footer_link_area > a:first-of-type,
+.footer_link_area > a:nth-of-type(2) {
+    position: relative;
+    padding-right: 2rem;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.footer_link_area > a:first-of-type::after,
+.footer_link_area > a:nth-of-type(2)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 2px;
+    height: 17px;
+    background-color: #bbb;
+    transform: translateY(-50%);
+}
+
+.footer_link_area > a:last-of-type {
+    color: #ff4b4c;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.customer_info_frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_accordion_title {
+    display: flex;
+    align-items: center;
+}
+
+.customer_info_frame > div > h4 {
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+
+.customer_info_frame > div > button {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    background-image: url('../images/bottom_arrow_btn.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 0.5s;
+}
+
+.info_accordion_wrap {
+    display: none;
+    margin-top: 1rem;
+}
+
+.info_accordion_wrap > ul > li {
+   color: #666;
+   font-size: 1.7rem;
+   font-weight: 600;
+   text-align: center;
+   line-height: 28px;
+}
+
+.info_accordion_wrap > ul > li > address {
+    font-style: normal;
+}
+
+.copyright {
+    margin: 2.5rem 0;
+}
+
+.copyright > p {
+    font-size: 1.7rem;
+    color: #888;
+}
+
+/* footer 아코디언 active */
+
+.customer_info_frame > div > button.active {
+    transform: rotate(-180deg);
+}
+
+/* 뱃지 컴포넌트 */
+
+.badge {
+    padding: 0.2rem 1.75rem;
+    font-size: 2rem;
+}
+
+.badge.red, .badge.orange, .badge.blue, .badge.green {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.badge.red {
+    margin-bottom: 1rem;
+    padding: 0.2rem 3.5rem;
+    border: 2px solid #fd1920;
+    color: #fd1920
+}
+
+.badge.orange {
+    border: 2px solid #ff7238;
+    color: #ff7238;
+}
+
+.badge.blue {
+    border: 2px solid #3baaff;
+    color: #3baaff;
+}
+
+.badge.green {
+    border: 2px solid #56e400;
+    color: #56e400;
+}
+
+.tab_cont_slide_badge {
+    font-size: 1.7rem;
+}
+
+.tab_cont_slide_badge.red {
+    margin-right: 1rem;
+    padding: 0.5rem 2rem;
+    border: 2px solid #fd1920;
+    color: #fd1920
+}
+
+.tab_cont_slide_badge.blue {
+    padding: 0.5rem 2rem;
+    border: 2px solid #3baaff;
+    color: #3baaff;
+}
+
+.tab_cont_slide_badge.green {
+    padding: 0.5rem 2rem;
+    border: 2px solid #56e400;
+    color: #56e400;
+}
