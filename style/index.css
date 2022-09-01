@@ -156,48 +156,21 @@ header > h1 > a {
     margin-right: 8.5rem;
 }
 
-/* .main_slide_frame > ul > li:first-of-type {
-    position: relative;
-    margin-right: 8.5rem;
-} */
-
-.main_slide_thumbnail01, .main_slide_thumbnail02 {
-    width: 33rem;
-    height: 36.4rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-.main_slide_thumbnail01 {
-    position: relative;
-    background-image: url('../images/main_slide_thum01.png');
-}
-
-.main_slide_thumbnail02 {
-    background-position: left;
-    background-image: url('../images/main_slide_thum02.png');
-}
-
-.main_cart {
-    position: absolute;
-    bottom: 2rem;
-    right: -3rem;
-    width: 10rem;
-    height: 10rem;
-    background-image: url('../images/main_cart.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    z-index: 99;
-}
-
 .main_slide_list > a > h3 {
     margin-bottom: 0.5rem;
     font-family: 'LG Smart Bold';
     font-size: 2.5rem;
     white-space: nowrap;
     color: #fff;
+}
+
+.main_cart {
+    max-width: 11rem;
+}
+
+.main_cart > img {
+    display: block;
+    width: 100%;
 }
 
 .price {
@@ -682,8 +655,8 @@ footer {
 /* 뱃지 컴포넌트 */
 
 .badge {
-    padding: 0.2rem 1.75rem;
-    font-size: 2rem;
+    padding: 0.2rem 1.5rem;
+    font-size: 2.1rem;
 }
 
 .badge.red, .badge.orange, .badge.blue, .badge.green {
