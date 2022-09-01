@@ -152,10 +152,6 @@ header > h1 > a {
     display: block;
 }
 
-.swiper-slide {
-    margin-right: 8.5rem;
-}
-
 .main_slide_thumbnail {
     position: relative;
     margin-bottom: 2.8rem;
@@ -168,7 +164,8 @@ header > h1 > a {
 .main_cart {
     position: absolute;
     bottom: 0;
-    right: -6rem;
+    right: -10%;
+    width: 33%;
 }
 
 .main_cart > img {

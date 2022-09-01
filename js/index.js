@@ -12,7 +12,8 @@ $(document).ready(function(){
           hide: false,
           draggable : true
         },
-        slidesPerView: 2.1
+        slidesPerView: 2.1,
+        spaceBetween: 85
       });
 
     /* 전역 변수 */
