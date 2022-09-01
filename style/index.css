@@ -48,7 +48,6 @@ header {
     width: 100%;
     height: 8rem;
     padding: 0 2.5rem;
-    border: 1px solid #000;
     transform: translateX(-50%);
     z-index: 9999;
 }
@@ -256,17 +255,6 @@ header > h1 > a {
     background: #fffa77;
 }
 
-
-
-/* .main_slide_scrollbar > .main_slide_scrollbar_drag {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30%;
-    height: 100%;
-    background-color: #fffa77;
-} */
-
 .main_bottom_bg {
     position: absolute;
     bottom: -1px;
@@ -305,28 +293,28 @@ header > h1 > a {
 
 /* 탭 메뉴 버튼 영역 */
 
-.tab_btn {
+.tab_btn_frame {
     padding-left: 2.5rem;
     overflow: hidden;
 }
 
-.tab_btn > ul {
+.tab_btn_frame > .tab_btn_ul {
     display: flex;
     align-items: center;
 }
 
-.tab_btn > ul > li {
+.tab_btn_frame > .tab_btn_ul > div {
     margin: 4rem 5.3rem 4rem 0;
 }
 
-.tab_btn > ul > li > a {
+.tab_btn_frame > .tab_btn_ul > div > a {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.tab_btn > ul > li > a > div {
+.tab_btn_frame > .tab_btn_ul > div > a > div {
     width: 10rem;
     height: 10rem;
     margin-bottom: 2rem;
@@ -337,43 +325,52 @@ header > h1 > a {
     background-size: contain;
 }
 
-.tab_btn > ul > li > a > span {
+.tab_btn_frame > .tab_btn_ul > div > a > span {
     font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
     font-size: 2rem;
 }
 
-.tab_btn > ul > li > a > div.fruit {
+.tab_btn_frame > .tab_btn_ul > div > a > div.fruit {
     background-image: url('../images/tab_btn01.png');
 }
 
-.tab_btn > ul > li > a > div.meat {
+.tab_btn_frame > .tab_btn_ul > div > a > div.meat {
     background-image: url('../images/tab_btn02.png');
 }
 
-.tab_btn > ul > li > a > div.vegetable {
+.tab_btn_frame > .tab_btn_ul > div > a > div.vegetable {
     background-image: url('../images/tab_btn03.png');
 }
 
-.tab_btn > ul > li > a > div.fish {
+.tab_btn_frame > .tab_btn_ul > div > a > div.fish {
     background-image: url('../images/tab_btn04.png');
 }
 
-.tab_btn > ul > li > a > div.food {
+.tab_btn_frame > .tab_btn_ul > div > a > div.food {
     background-image: url('../images/tab_btn05.png');
 }
 
 /* 탭버튼 active */
 
-.tab_btn > ul > li.active > a > div {
+.tab_btn_frame > .tab_btn_ul > div > a.active > div {
+    border: 2px solid #ff4b4c;
     background-color: #fff;
 }
 
-.tab_btn > ul > li.active > a > span {
+.tab_btn_frame > .tab_btn_ul > div > a.active > span {
     color: #ff4b4c;
     font-weight: bold;
 }
 
 /* 탭메뉴 내용 영역 */
+
+.tab_cont_frame > ul > li {
+    display: none;
+}
+
+.tab_cont_frame > ul > li.active {
+    display: block;
+}
 
 .tab_cont_title {
     display: flex;
