@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     /* 스와이퍼 */
 
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".main_slide_frame", {
         pagination : {
             el: '.main_slide_nav',
             type: 'bullets'
@@ -12,7 +12,7 @@ $(document).ready(function(){
           hide: false,
           draggable : true
         },
-        slidesPerView: 2.1,
+        slidesPerView: 1.9,
         spaceBetween: 85
       });
 

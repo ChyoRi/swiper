@@ -143,8 +143,12 @@ header > h1 > a {
 
 /* 메인 슬라이드 영역 */
 
+.main_slide_frame_wrap {
+    padding-left: 2.5rem;
+} 
+
 .main_slide_frame {
-    margin: 2rem 0 2.5rem 2.5rem;
+    margin: 2rem 0 2.5rem;
     overflow: hidden;
 }
 
@@ -186,17 +190,19 @@ header > h1 > a {
     justify-content: space-between;
 }
 
-.price > .discount > em,
-.price > .discount > .persent {
+.price > .discount > em {
     font-family: 'LG Smart Bold';
-    font-size: 4.7rem;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 900;
     color: #333;
 }
 
 .price > .discount > .persent {
+    font-family: 'LG Smart Bold';
     font-size: 2.5rem;
+    font-weight: 900;
+    color: #333;
 }
 
 .badge.yellow {
@@ -219,9 +225,35 @@ header > h1 > a {
 
 .modern_price {
     font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-weight: 700;
     color: #222222;
+}
+
+.main_slide_frame .swiper-horizontal>.swiper-pagination-bullets,
+.main_slide_frame .swiper-pagination-bullets.swiper-pagination-horizontal,
+.main_slide_frame .swiper-pagination-custom,
+.main_slide_frame .swiper-pagination-fraction {
+    display: flex;
+    align-items: flex-start;
+    left: auto;
+    bottom: auto;
+    width: 80%;
+    height: 0.5rem;
+    margin: 2.5rem auto 0;
+    background: rgba(255,255,255,0.5);
+}
+
+.main_slide_frame .swiper-pagination-bullets.swiper-pagination-horizontal span {
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    background: none;
+    border-radius: 0;
+}
+
+.main_slide_frame .swiper-pagination-bullets.swiper-pagination-horizontal span.swiper-pagination-bullet-active {
+    background: #fffa77;
 }
 
 
@@ -662,8 +694,8 @@ footer {
 /* 뱃지 컴포넌트 */
 
 .badge {
-    padding: 0.2rem 1.5rem;
-    font-size: 2.1rem;
+    padding: 0.2rem 1.25rem;
+    font-size: 1.6rem;
 }
 
 .badge.red, .badge.orange, .badge.blue, .badge.green {
