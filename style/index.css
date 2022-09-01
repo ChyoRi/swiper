@@ -144,7 +144,7 @@ header > h1 > a {
 /* 메인 슬라이드 영역 */
 
 .main_slide_frame {
-    margin: 1.5rem 0 2.5rem 2.5rem;
+    margin: 2rem 0 2.5rem 2.5rem;
     overflow: hidden;
 }
 
@@ -156,21 +156,31 @@ header > h1 > a {
     margin-right: 8.5rem;
 }
 
+.main_slide_thumbnail {
+    position: relative;
+    margin-bottom: 2.8rem;
+}
+
+.main_slide_thumbnail > img {
+    max-width: 100%;
+}
+
+.main_cart {
+    position: absolute;
+    bottom: 0;
+    right: -6rem;
+}
+
+.main_cart > img {
+    max-width: 100%;
+}
+
 .main_slide_list > a > h3 {
     margin-bottom: 0.5rem;
     font-family: 'LG Smart Bold';
     font-size: 2.5rem;
     white-space: nowrap;
     color: #fff;
-}
-
-.main_cart {
-    max-width: 11rem;
-}
-
-.main_cart > img {
-    display: block;
-    width: 100%;
 }
 
 .price {
