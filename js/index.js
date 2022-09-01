@@ -3,12 +3,20 @@ $(document).ready(function(){
     /* 스와이퍼 */
 
     var swiper = new Swiper(".mySwiper", {
+        pagination : {
+            el: '.main_slide_nav',
+            type: 'bullets'
+        },
         scrollbar: {
           el: ".swiper-scrollbar",
-          hide: true,
+          hide: false,
+          draggable : true
         },
+        slidesPerView: 2.1
       });
-      
+
+    /* 전역 변수 */
+
     const footerAccordionBtn = $('.footer_btn');
     
     /* 헤더 배경색 변경 */
