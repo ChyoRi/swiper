@@ -507,8 +507,8 @@ header > h1 > a {
 
 .tab_cont_slide_frame > .swiper-wrapper > div > a > .tab_cont_slide_thumb > .tab_cont_cart {
     position: absolute;
-    bottom: -10%;
-    right: -10%;
+    bottom: -8%;
+    right: -6%;
 }
 
 .tab_cont_slide_frame > .swiper-wrapper > div > a > .tab_cont_slide_thumb > .tab_cont_cart > img {
