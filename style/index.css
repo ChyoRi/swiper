@@ -422,8 +422,9 @@ header > h1 > a {
 
 .tab_main_cont > .main_cont_bg > .main_cont_cart_wrap {
     position: absolute;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1rem;
+    right: 1rem;
+    width: 12%;
 }
 
 .tab_main_cont > .main_cont_bg > .main_cont_cart_wrap > img {
@@ -492,6 +493,7 @@ header > h1 > a {
 }
 
 .tab_cont_slide_frame > .swiper-wrapper > div {
+    width: 40%;
     margin-right: 3rem;
 }
 
@@ -509,13 +511,13 @@ header > h1 > a {
 
 .tab_cont_slide_frame > .swiper-wrapper > div > a > .tab_cont_slide_thumb > .tab_cont_cart {
     position: absolute;
-    bottom: -2rem;
-    right: -2rem;
+    bottom: 1rem;
+    right: 2rem;
+    width: 25%;
 }
 
 .tab_cont_slide_frame > .swiper-wrapper > div > a > .tab_cont_slide_thumb > .tab_cont_cart > img {
     max-width: 100%;
-    transform: scale(0.4);
 }
 
 .tab_cont_slide_frame > .swiper-wrapper > div > a > h2 {
@@ -736,7 +738,7 @@ footer {
     text-align: center;
     width: 11.3rem;
     height: 3.7rem;
-    line-height: 3.4rem;
+    line-height: 3.1rem;
     font-size: 1.6rem;
 }
 
