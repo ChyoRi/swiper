@@ -26,8 +26,7 @@ $(document).ready(function(){
             el: '.tab_cont_slide_nav',
             type: 'bullets'
         },
-        slidesPerView: 2.5,
-        spaceBetween: 40,
+        slidesPerView: 1.9,
         freeMode : true
     });
 
