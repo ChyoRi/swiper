@@ -507,8 +507,8 @@ header > h1 > a {
 
 .tab_cont_slide_frame > .swiper-wrapper > div > a > .tab_cont_slide_thumb > .tab_cont_cart {
     position: absolute;
-    bottom: -8%;
-    right: -6%;
+    bottom: -2rem;
+    right: -2rem;
 }
 
 .tab_cont_slide_frame > .swiper-wrapper > div > a > .tab_cont_slide_thumb > .tab_cont_cart > img {
@@ -577,30 +577,20 @@ header > h1 > a {
     margin-bottom: 1rem;
 }
 
-.tab_cont_slide_frame .swiper-horizontal>.swiper-pagination-bullets,
-.tab_cont_slide_frame .swiper-pagination-bullets.swiper-pagination-horizontal,
-.tab_cont_slide_frame .swiper-pagination-custom,
-.tab_cont_slide_frame .swiper-pagination-fraction {
-    display: flex;
-    align-items: flex-start;
-    left: auto;
-    bottom: auto;
+.tab_cont_slide_scrollbar {
+    position: relative;
     width: 80%;
     height: 0.5rem;
     margin: 5rem auto 0;
-    background: #e8e8ec;
+    background-color: #e8e8ec;
 }
 
-.tab_cont_slide_frame .swiper-pagination-bullets.swiper-pagination-horizontal span {
-    width: 25%;
-    height: 100%;
-    margin: 0;
-    background: none;
+.swiper-scrollbar-drag {
+    position: absolute;
+    top: 0;
+    left: 0;
     border-radius: 0;
-}
-
-.tab_cont_slide_frame .swiper-pagination-bullets.swiper-pagination-horizontal span.swiper-pagination-bullet-active {
-    background: #ff4b4c ;
+    background-color: #ff4b4c;
 }
 
 
