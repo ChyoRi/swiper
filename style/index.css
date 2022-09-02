@@ -293,8 +293,11 @@ header > h1 > a {
 
 /* 탭 메뉴 버튼 영역 */
 
-.tab_btn_frame {
+.tab_frame_wrap {
     padding-left: 2.5rem;
+}
+
+.tab_btn_frame {
     overflow: hidden;
 }
 
@@ -376,7 +379,7 @@ header > h1 > a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2.7rem 0 2.5rem;
+    padding: 0 2.5rem 0 0;
     font-family: 'AppleSDGothicNeo', sans-serif;
 }
 
@@ -405,7 +408,7 @@ header > h1 > a {
 }
 
 .tab_main_cont {
-    padding: 0 2.7rem 0 2.5rem;
+    padding: 0 2.5rem 0 0;
 }
 
 .tab_main_cont > .main_cont_bg {
@@ -474,10 +477,6 @@ header > h1 > a {
 }
 
 /* 탭 메뉴 안 슬라이드 영역 */
-
-.tab_cont_frame_wrap {
-    padding-left: 2.5rem;
-} 
 
 .tab_cont_slide_frame {
     margin: 6rem 0 3rem;
@@ -579,9 +578,9 @@ header > h1 > a {
 
 .tab_cont_slide_scrollbar {
     position: relative;
-    width: 80%;
+    width: 96%;
     height: 0.5rem;
-    margin: 5rem auto 0;
+    margin: 5rem 0 0;
     background-color: #e8e8ec;
 }
 

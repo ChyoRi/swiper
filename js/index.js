@@ -25,6 +25,7 @@ $(document).ready(function(){
         scrollbar: {
             el: ".tab_cont_slide_scrollbar",
             hide: false,
+            dragSize: 100,
           },
         slidesPerView: 2.5,
         freeMode : true
