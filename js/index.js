@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     /* 메인 스와이퍼*/
 
-    var swiperMain = new Swiper(".main_slide_frame", {
+    const swiperMain = new Swiper(".main_slide_frame", {
         pagination : {
             el: '.main_slide_nav',
             type: 'bullets'
@@ -13,20 +13,22 @@ $(document).ready(function(){
 
     /* 탭 메뉴 버튼 스와이퍼 */
 
-    var swiperTabBtn = new Swiper(".tab_btn_frame", {
+    const swiperTabBtn = new Swiper(".tab_btn_frame", {
         slidesPerView: 4.8,
-        spaceBetween: 20
+        spaceBetween: 20,
+        freeMode : true
     });
 
     /* 탭 메뉴 내용 슬라이드 스와이퍼 */
 
-    var swiperMain = new Swiper(".tab_cont_slide_frame", {
+    const swiperTabCont = new Swiper(".tab_cont_slide_frame", {
         pagination : {
             el: '.tab_cont_slide_nav',
             type: 'bullets'
         },
-        slidesPerView: 1.9,
-        spaceBetween: 85
+        slidesPerView: 2.5,
+        spaceBetween: 40,
+        freeMode : true
     });
 
     /* 전역 변수 */

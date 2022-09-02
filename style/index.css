@@ -409,12 +409,19 @@ header > h1 > a {
 }
 
 .tab_main_cont > .main_cont_bg {
-    padding: 50% 0;
-    margin: 3% 0;
-    background-image: url('../images/tab_cont_main.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    position: relative;
+    margin: 2rem 0 3rem;
+}
+
+.tab_main_cont > .main_cont_bg > img {
+    max-width: 100%;
+}
+
+.tab_main_cont > .main_cont_bg > .main_cont_cart {
+    position: absolute;
+    bottom: -1%;
+    right: -1%;
+    transform: scale(0.6);
 }
 
 .tab_main_cont > h2 {
@@ -474,43 +481,42 @@ header > h1 > a {
     overflow: hidden;
 }
 
-.tab_cont_slide_frame > ul {
+.tab_cont_slide_frame > .swiper-wrapper {
     display: flex;
     align-items: flex-start;
 }
 
-.tab_cont_slide_frame > ul > li {
+.tab_cont_slide_frame > .swiper-wrapper > div {
     margin-right: 3rem;
 }
 
-.tab_cont_slide_frame > ul > li > a {
+.tab_cont_slide_frame > .swiper-wrapper > div > a {
     display: block;
 }
 
-.tab_cont_slide_frame > ul > li > a > .tab_cont_slide_thumb {
-    width: 27rem;
-    height: 27rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.tab_cont_slide_frame > .swiper-wrapper > div > a > .tab_cont_slide_thumb {
+    position: relative;
 }
 
-.tab_cont_slide_frame > ul > li > a > .tab_cont_slide_thumb.avocado {
-    background-image: url('../images/tab_cont_slide_img01.png');
+.tab_cont_slide_frame > .swiper-wrapper > div > a > .tab_cont_slide_thumb > img {
+    max-width: 100%;
 }
 
-.tab_cont_slide_frame > ul > li > a > .tab_cont_slide_thumb.pomegranate {
-    background-image: url('../images/tab_cont_slide_img02.png');
+.tab_cont_slide_frame > .swiper-wrapper > div > a > .tab_cont_slide_thumb > .tab_cont_cart {
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
 }
 
-.tab_cont_slide_frame > ul > li > a > .tab_cont_slide_thumb.grape {
-    background-image: url('../images/tab_cont_slide_img03.png');
+.tab_cont_slide_frame > .swiper-wrapper > div > a > .tab_cont_slide_thumb > .tab_cont_cart > img {
+    max-width: 100%;
+    transform: scale(0.4);
 }
 
-.tab_cont_slide_frame > ul > li > a > h2 {
+.tab_cont_slide_frame > .swiper-wrapper > div > a > h2 {
     margin-top: 2rem;
     font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 500;
 }
 
@@ -554,23 +560,6 @@ header > h1 > a {
     font-weight: bold;
 }
 
-.tab_cont_slide_scrollbar {
-    position: relative;
-    width: 85%;
-    height: 0.5rem;
-    margin: 0 auto;
-    background-color: #e8e8ec;
-}
-
-.tab_cont_slide_scrollbar .tab_cont_slide_scrollbar_drag {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 25%;
-    height: 100%;
-    background-color: #ff4b4c;
-}
-
 .tab_cont_slide_badge_area {
     display: flex;
     flex-wrap: wrap;
@@ -585,6 +574,32 @@ header > h1 > a {
     margin-bottom: 1rem;
 }
 
+.tab_cont_slide_frame .swiper-horizontal>.swiper-pagination-bullets,
+.tab_cont_slide_frame .swiper-pagination-bullets.swiper-pagination-horizontal,
+.tab_cont_slide_frame .swiper-pagination-custom,
+.tab_cont_slide_frame .swiper-pagination-fraction {
+    display: flex;
+    align-items: flex-start;
+    left: auto;
+    bottom: auto;
+    width: 80%;
+    height: 0.5rem;
+    margin: 5rem auto 0;
+    background: #e8e8ec;
+}
+
+.tab_cont_slide_frame .swiper-pagination-bullets.swiper-pagination-horizontal span {
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    background: none;
+    border-radius: 0;
+}
+
+.tab_cont_slide_frame .swiper-pagination-bullets.swiper-pagination-horizontal span.swiper-pagination-bullet-active {
+    background: #ff4b4c ;
+}
+
 
 /* 푸터 */
 
@@ -592,7 +607,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 8rem;
     background-color: #e8e8ec;
     font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
 }
@@ -692,7 +707,7 @@ footer {
 
 .badge {
     padding: 0.2rem 1.25rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .badge.red, .badge.orange, .badge.blue, .badge.green {
@@ -722,7 +737,7 @@ footer {
 }
 
 .tab_cont_slide_badge {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
 
 .tab_cont_slide_badge.red {
