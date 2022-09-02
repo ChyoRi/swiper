@@ -7,8 +7,7 @@ $(document).ready(function(){
             el: '.main_slide_nav',
             type: 'bullets'
         },
-        slidesPerView: 1.9,
-        spaceBetween: 85
+        slidesPerView: 'auto',
     });
 
     /* 탭 메뉴 버튼 스와이퍼 */
@@ -26,9 +25,48 @@ $(document).ready(function(){
             el: ".tab_cont_slide_scrollbar",
             hide: false,
             dragSize: 100,
-          },
+        },
         slidesPerView: 'auto',
-        freeMode : true
+        freeMode : true,
+        breakpoints: {
+
+            280: {
+                scrollbar: {
+                    dragSize: 50                
+                }
+            },
+          
+            320: {
+                scrollbar: {
+                    dragSize: 55
+                }
+            },
+
+            360: {
+                scrollbar: {
+                    dragSize: 60
+                }
+            },
+
+            480: {
+                scrollbar: {
+                    dragSize: 70
+                }
+            },
+
+            540: {
+                scrollbar: {
+                    dragSize: 80
+                }
+            },
+
+            640: {
+                scrollbar: {
+                    dragSize: 90
+                }
+            }
+
+        }
     });
 
     /* 전역 변수 */
@@ -69,7 +107,7 @@ $(document).ready(function(){
         const i = thisEl.parent().index();
 
         thisEl.addClass("active").parent().siblings().children("a").removeClass("active");
-        tabCont?.eq(i)?.addClass("active")?.siblings()?.removeClass("active");
+        tabCont.eq(i).addClass("active").siblings().removeClass("active");
     };
 
 
