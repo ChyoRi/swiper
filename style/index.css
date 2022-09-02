@@ -142,13 +142,13 @@ header > h1 > a {
 
 /* 메인 슬라이드 영역 */
 
-.main_slide_frame_wrap {
-    padding-left: 2.5rem;
-} 
-
 .main_slide_frame {
     margin: 2rem 0 2.5rem;
     overflow: hidden;
+}
+
+.main_slide_frame > .swiper-wrapper {
+    padding-left: 2.5rem;
 }
 
 .main_slide_list > a {
@@ -698,7 +698,10 @@ footer {
 /* 뱃지 컴포넌트 */
 
 .badge {
+    width: 8.9rem;
+    height: 2.8rem;
     padding: 0.2rem 1.25rem;
+    text-align: center;
     font-size: 1.5rem;
 }
 
@@ -708,7 +711,6 @@ footer {
 
 .badge.red {
     margin-bottom: 1rem;
-    padding: 0.2rem 3.5rem;
     border: 2px solid #fd1920;
     color: #fd1920
 }
@@ -728,25 +730,25 @@ footer {
     color: #56e400;
 }
 
-.tab_cont_slide_badge {
+.tab_cont_slide_badge > span {
+    text-align: center;
+    width: 11.3rem;
+    height: 3.7rem;
     font-size: 1.6rem;
 }
 
 .tab_cont_slide_badge.red {
     margin-right: 1rem;
-    padding: 0.5rem 2rem;
     border: 2px solid #fd1920;
     color: #fd1920
 }
 
 .tab_cont_slide_badge.blue {
-    padding: 0.5rem 2rem;
     border: 2px solid #3baaff;
     color: #3baaff;
 }
 
 .tab_cont_slide_badge.green {
-    padding: 0.5rem 2rem;
     border: 2px solid #56e400;
     color: #56e400;
 }
