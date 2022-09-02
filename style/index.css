@@ -475,9 +475,12 @@ header > h1 > a {
 
 /* 탭 메뉴 안 슬라이드 영역 */
 
+.tab_cont_frame_wrap {
+    padding-left: 2.5rem;
+} 
+
 .tab_cont_slide_frame {
     margin: 6rem 0 3rem;
-    padding-left: 2.5rem;
     overflow: hidden;
 }
 
